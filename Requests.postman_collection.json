@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "497e9eb1-056e-4a0c-b44e-fe4642441b7c",
+		"name": "Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19040062",
+		"_collection_link": "https://blue-sunset-564338.postman.co/workspace/New-Team-Workspace~e4b1667b-1b45-4bc9-8660-a23a07aeaf6d/collection/19040062-497e9eb1-056e-4a0c-b44e-fe4642441b7c?action=share&source=collection_link&creator=19040062"
+	},
+	"item": [
+		{
+			"name": "NodeMailer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"to\":[\"karam.hamam95@gmail.com\",\"mkcoder66@gmail.com\"],\r\n  \"subject\":\"NodeMailer\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5050/v1",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"v1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
