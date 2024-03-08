@@ -42,9 +42,9 @@ This repository provides a simple Node.js service to send emails using Nodemaile
    - **Body:** JSON with the following properties (replace values as needed):
      ```json
      {
-  "to":["karam.hamam95@gmail.com","mkcoder66@gmail.com"],
-  "subject":"NodeMailer"
-  }
+       "to":["karam.hamam95@gmail.com","mkcoder66@gmail.com"],
+       "subject":"NodeMailer"
+       }
      ```
 
 **Middleware and Data Validation**
