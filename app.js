@@ -11,6 +11,6 @@ app.use(express.json())
 
 
 // Routing
-app.use('/v1', router)
+app.use('/', router)
 
 module.exports = app
