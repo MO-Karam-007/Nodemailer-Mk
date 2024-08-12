@@ -5,22 +5,26 @@ This repository provides a simple Node.js service to send emails using Nodemaile
 **Getting Started**
 
 1. **Prerequisites:**
+
    - Node.js and npm installed on your system.
 
 2. **Installation:**
+
    - Clone this repository using Git:
+
      ```bash
      git clone https://github.com/MO-Karam-007/Nodemailer-Mk
      ```
 
    - Navigate to the project directory:
+
      ```bash
      cd Nodemailer-Mk
      ```
 
    - Install the required dependencies:
      ```bash
-     npm install  
+     npm install
      ```
 
 **Sending Emails**
@@ -37,14 +41,14 @@ This repository provides a simple Node.js service to send emails using Nodemaile
 
    This example uses Postman to send a POST request:
 
-   - **URL:** `localhost:5050/v1`
+   - **URL:** `https://nodemailer-mk-p5rx.vercel.app/`
    - **Method:** POST
    - **Body:** JSON with the following properties (replace values as needed):
      ```json
      {
-       "to":["karam.hamam95@gmail.com","mkcoder66@gmail.com"],
-       "subject":"NodeMailer"
-       }
+       "to": ["karam.hamam95@gmail.com", "mkcoder66@gmail.com"],
+       "subject": "NodeMailer"
+     }
      ```
 
 **Middleware and Data Validation**
@@ -53,9 +57,8 @@ This repository provides a simple Node.js service to send emails using Nodemaile
 
 **Running the Service:**
 
-- Start the Node.js server: 
+- Start the Node.js server:
+
   ```bash
   npm start:dev
   ```
-
-
