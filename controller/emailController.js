@@ -5,7 +5,7 @@ function generateOTP() {
     return otp.toString();
 }
 
-let otpCode = generateOTP();
+let otpCode;
 
 function emailSetup()
 {
@@ -26,6 +26,7 @@ function emailSetup()
 
 exports.send = async (req, res) =>
 {
+    otpCode = generateOTP();
     const { from, to, subject, content, attachment } = req.body
     const transporter = emailSetup()
 

@@ -6,7 +6,7 @@ const router = require('./router/index')
 const app = express()
 // Cors
 app.use(cors({
-    origin: ['http://localhost:4200','https://shop-easy-5fgnzk1p6-mohamed-karams-projects.vercel.app'],
+    origin: "*",
     ethods: 'GET,POST,PUT,DELETE,OPTIONS',
 }))
 
