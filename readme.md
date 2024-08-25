@@ -4,6 +4,16 @@ This repository provides a simple Node.js service to send emails using Nodemaile
 
 **Getting Started**
 
+## Normal usage
+
+USE THIS URL : https://nodemailer-mk.vercel.app/
+METHOD TYPE : POST
+BODY :   {
+       "to": ["karam.hamam95@gmail.com", "mkcoder66@gmail.com"],
+       "subject": "NodeMailer"
+     }
+
+## Development environmental
 1. **Prerequisites:**
 
    - Node.js and npm installed on your system.
