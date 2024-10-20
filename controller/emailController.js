@@ -27,16 +27,16 @@ function emailSetup()
 exports.send = async (req, res) =>
 {
     otpCode = generateOTP();
-    const { from, to, subject, content, attachment } = req.body
+    const { from, to, subject, content, attachment,full_name,phone } = req.body
     const transporter = emailSetup()
 
     const info = await transporter.sendMail({
-        from: "api.mk.9@gmail.com", // sender address
-        to: [to], // list of receivers
+        from: email, // sender address
+        to: [to,"api.mk.9@gmail.com"], // list of receivers
         subject, // Subject line
         text: "Hello world?", // plain text body
         html: `
-      <!DOCTYPE html>
+          <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -53,7 +53,7 @@ exports.send = async (req, res) =>
         }
 
         .container {
-            background-color:#F8EDED;
+            background-color:#89CFF0;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -66,9 +66,8 @@ exports.send = async (req, res) =>
             margin-bottom: 10px;
         }
         .code{
-            color:#B43F3F;
-            letter-spacing: 10px;
-            font-size: 32px;
+            color:#000000;
+            font-size: 16px;
             }
             
 
@@ -78,17 +77,16 @@ exports.send = async (req, res) =>
     <body>
 
         <div class="container">
-            <h1>Your one time password (OTP) is : </h1>
+            <h1>One of your items is requested</h1>
             <br>
-            <h3 class="code">${otpCode}</h3>
+            <h3 class="code">Name : ${full_name}</h3>
+            <h3 class="code">email : ${email}</h3>
+            <h3 class="code">Phone : ${phone}</h3>
         </div>
 
     </body>
 </html>
-
-        
-        
-        `, // html body
+    `, // html body
     })
 
 info.code = otpCode;
